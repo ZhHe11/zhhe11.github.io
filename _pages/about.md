@@ -16,9 +16,8 @@ redirect_from:
 
 {% include_relative includes/pub.md %}
 
-<!-- {% include_relative includes/honers.md %} -->
-
 {% include_relative includes/others.md %}
 
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=zJnYQw21kIHNuD_BAOwnS1HgCvIuFne1NtSCE06oThs'></script>
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=zJnYQw21kIHNuD_BAOwnS1HgCvIuFne1NtSCE06oThs&cl=ffffff&w=a"></script> -->
+<!-- {% include_relative includes/honers.md %} -->

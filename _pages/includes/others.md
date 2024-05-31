@@ -6,6 +6,7 @@
 
 # 💻 Internships
 
+- *2024.05 - now, Shang Hai AI Lab, Shanghai, China.
 - *2023.10 - 2024.01*, OPPO Research Institute, Shenzhen, China.
 - *2023.07 - 2023.10*, MSRA, remote intern, Suzhou, China.
 - *2021.06 - 2021.08*, Xiaomi, Overseas System Recommendation Algorithm Group, Beijing, China. 

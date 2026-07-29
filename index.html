@@ -24,6 +24,7 @@
       <div class="page header-inner">
         <a class="site-name" href="#top">He Zhang</a>
         <nav aria-label="Primary navigation">
+          <a href="#education">Education</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#project">Open Source</a>
@@ -50,20 +51,13 @@
               Hi! I am a Ph.D. Candidate in Artificial Intelligence at the Hong Kong
               University of Science and Technology (Guangzhou), advised by
               Prof. Hui Xiong. I am also an Algorithm Engineer at AI² Robotics,
-              where I work on vision-language-action models,
-              reinforcement learning, and real-world robot deployment.
+              working on vision-language-action models, reinforcement learning,
+              and real-world robot deployment.
             </p>
             <p>
-              Before my doctoral studies, I received my B.E. in Automation from
-              Tsinghua University in 2022. My previous research and engineering
-              experience includes Shanghai AI Laboratory, OPPO, Microsoft Research
-              Asia, and Xiaomi.
-            </p>
-            <p>
-              My research lies at the intersection of reinforcement learning,
-              multimodal behavior learning, robot control, and embodied intelligence.
-              I am especially interested in agents that learn through their own
-              interaction with the physical world.
+              I received my B.E. in Automation from Tsinghua University in 2022.
+              My research combines reinforcement learning, multimodal behavior
+              learning, robot control, and embodied intelligence.
             </p>
           </div>
           <div class="contact-links">
@@ -74,6 +68,35 @@
         </div>
       </section>
 
+      <section id="education">
+        <div class="section-heading">
+          <h2>Education</h2>
+          <p>Academic training in artificial intelligence and automation.</p>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <div class="institution-logo hkust-logo">
+              <img src="/images/institutions/hkust-gz.png" alt="HKUST Guangzhou" loading="lazy">
+            </div>
+            <div>
+              <span>2022 - Present</span>
+              <h3>Ph.D. Candidate, Artificial Intelligence</h3>
+              <p>The Hong Kong University of Science and Technology (Guangzhou)</p>
+            </div>
+          </article>
+          <article class="education-card">
+            <div class="institution-logo tsinghua-logo">
+              <img src="/images/institutions/tsinghua.png" alt="Tsinghua University" loading="lazy">
+            </div>
+            <div>
+              <span>2018 - 2022</span>
+              <h3>B.E., Automation</h3>
+              <p>Tsinghua University</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section id="research">
         <div class="section-heading">
           <h2>Research</h2>
@@ -81,44 +104,35 @@
         </div>
         <div class="research-statement">
           <p class="research-lead">
-            My long-term goal is to build embodied agents that can autonomously explore
-            dynamic environments, discover reusable physical and causal structure, and
-            continually improve their behavior. Rather than learning only from static,
-            human-collected datasets, I want robots to actively generate informative
-            experience and use it to guide the next cycle of learning and control.
+            I aim to build embodied agents that explore autonomously, discover reusable
+            physical and causal structure, and improve continuously through interaction.
           </p>
           <div class="research-areas">
             <article>
               <h3>Autonomous Exploration &amp; Skill Discovery</h3>
               <p>
-                Learning diverse, reusable skills without dense task supervision, and
-                selecting interactions that expose uncertainty, regret, or prediction error.
+                Reusable skills and informative interactions without dense supervision.
               </p>
             </article>
             <article>
               <h3>Intervenable Multimodal Behavior</h3>
               <p>
-                Building efficient multimodal policies whose behavior can be selected,
-                adapted, and improved through reinforcement learning and human guidance.
+                Efficient policies whose behavior can be selected, adapted, and improved.
               </p>
             </article>
             <article>
               <h3>World Models &amp; Lifelong Robot Learning</h3>
               <p>
-                Learning action-conditioned models of the physical world, accumulating
-                knowledge and skills over time, and adapting across objects and environments.
+                Action-conditioned world models that accumulate knowledge without forgetting.
               </p>
             </article>
           </div>
           <div class="current-plan">
             <strong>Current research plan</strong>
             <p>
-              I am exploring embodied scientific discovery: a robot designs and executes
-              its own physical experiments—pushing, pulling, grasping, releasing, and
-              colliding with objects—to recover relationships among force, mass,
-              acceleration, friction, and contact. The central test is whether the
-              discovered structure supports counterfactual prediction and improves
-              control and adaptation on unseen objects.
+              I am exploring embodied scientific discovery: robots autonomously conduct
+              physical experiments, recover relationships among force, mass, acceleration,
+              friction, and contact, then use them for prediction and control.
             </p>
           </div>
           <p class="interest-line">
@@ -142,6 +156,9 @@
               <p class="publication-description">Source-intervenable flow policies for controllable multimodal robot behavior.</p>
               <p class="paper-links"><a href="https://arxiv.org/abs/2607.10206" target="_blank" rel="noreferrer">Paper</a></p>
             </div>
+            <figure class="publication-figure">
+              <img src="/images/publications/source-lifted-2026.jpg" alt="Source-Lifted Flow Matching method overview" loading="lazy">
+            </figure>
           </li>
           <li class="publication">
             <div class="publication-meta"><strong>ICLR 2026</strong>2026</div>
@@ -151,6 +168,9 @@
               <p class="publication-description">Q-guided priors and explicit entropy control for efficient continuous-control policies.</p>
               <p class="paper-links"><a href="https://arxiv.org/abs/2603.14245" target="_blank" rel="noreferrer">Paper</a></p>
             </div>
+            <figure class="publication-figure">
+              <img src="/images/publications/goldenstart-iclr-2026.jpg" alt="GoldenStart Q-guided prior illustration" loading="lazy">
+            </figure>
           </li>
           <li class="publication">
             <div class="publication-meta"><strong>ICML 2025</strong>2025</div>
@@ -160,6 +180,9 @@
               <p class="publication-description">A regret-aware min-max framework for improving skill-learning efficiency and diversity.</p>
               <p class="paper-links"><a href="https://proceedings.mlr.press/v267/zhang25dp.html" target="_blank" rel="noreferrer">Paper</a></p>
             </div>
+            <figure class="publication-figure">
+              <img src="/images/publications/skill-discovery-icml-2025.jpg" alt="Regret-aware skill discovery overview" loading="lazy">
+            </figure>
           </li>
           <li class="publication">
             <div class="publication-meta"><strong>ACM MM</strong>2023</div>
@@ -169,6 +192,9 @@
               <p class="publication-description">Multi-turn recommendation that learns latent user preferences through reinforcement learning.</p>
               <p class="paper-links"><a href="https://doi.org/10.1145/3581783.3612420" target="_blank" rel="noreferrer">Paper</a></p>
             </div>
+            <figure class="publication-figure">
+              <img src="/images/publications/acm-mm-2023.jpg" alt="Interactive interior design recommendation system" loading="lazy">
+            </figure>
           </li>
         </ol>
       </section>
@@ -197,6 +223,9 @@
             <span>public commits · first by commit count</span>
             <a href="https://github.com/AlphaBrainGroup/AlphaBrain" target="_blank" rel="noreferrer">View on GitHub</a>
           </div>
+          <figure class="project-figure">
+            <img src="/images/projects/alphabrain-main.png" alt="AlphaBrain platform architecture" loading="lazy">
+          </figure>
         </article>
       </section>
 
@@ -234,34 +263,22 @@
         </ol>
       </section>
 
-      <div class="two-column" id="education">
-        <section>
-          <div class="section-heading"><h2>Education</h2></div>
-          <ul class="compact-list">
-            <li>
-              <strong>Ph.D. Candidate, Artificial Intelligence</strong>
-              <span>HKUST(GZ) · 2022–Present</span>
-            </li>
-            <li>
-              <strong>B.E., Automation</strong>
-              <span>Tsinghua University · 2018–2022</span>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <div class="section-heading"><h2>Awards</h2></div>
-          <ul class="compact-list">
-            <li>
-              <strong>CAST Young Science and Technology Talent Development Program</strong>
-              <span>Doctoral Student Track · 2025</span>
-            </li>
-            <li>
-              <strong>Comprehensive Excellence Scholarship</strong>
-              <span>Tsinghua University · 2020</span>
-            </li>
-          </ul>
-        </section>
-      </div>
+      <section id="awards">
+        <div class="section-heading">
+          <h2>Awards</h2>
+          <p>Selected recognition.</p>
+        </div>
+        <ul class="compact-list awards-list">
+          <li>
+            <strong>CAST Young Science and Technology Talent Development Program</strong>
+            <span>Doctoral Student Track · 2025</span>
+          </li>
+          <li>
+            <strong>Comprehensive Excellence Scholarship</strong>
+            <span>Tsinghua University · 2020</span>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>

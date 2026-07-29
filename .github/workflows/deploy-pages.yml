@@ -29,7 +29,7 @@ jobs:
         run: |
           mkdir -p _site/images
           cp index.html site.css He-Zhang-CV.pdf og.png _site/
-          cp images/he-zhang-portrait.png _site/images/
+          cp -R images/. _site/images/
           touch _site/.nojekyll
 
       - name: Configure GitHub Pages

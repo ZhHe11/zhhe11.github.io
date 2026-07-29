@@ -191,6 +191,66 @@ section {
   color: var(--muted);
 }
 
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-left: calc(180px + 2.5rem);
+}
+
+.education-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--white);
+}
+
+.institution-logo {
+  display: flex;
+  align-items: center;
+  min-height: 86px;
+  padding: 1rem 1.15rem;
+}
+
+.institution-logo img {
+  display: block;
+  width: 100%;
+  height: 52px;
+  object-fit: contain;
+}
+
+.hkust-logo {
+  background: #075475;
+}
+
+.tsinghua-logo {
+  background: #6c2675;
+}
+
+.education-card > div:last-child {
+  padding: 1rem 1.1rem 1.15rem;
+  border-top: 1px solid var(--border);
+}
+
+.education-card span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.education-card h3 {
+  margin: 0.3rem 0 0.25rem;
+  color: var(--blue-dark);
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+.education-card p {
+  margin: 0;
+  color: #4e5b66;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
 .research-statement {
   margin-left: calc(180px + 2.5rem);
 }
@@ -261,9 +321,10 @@ section {
 
 .publication {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
+  grid-template-columns: 88px minmax(0, 1fr) 210px;
   gap: 1.25rem;
-  padding: 1.3rem 0;
+  align-items: start;
+  padding: 1.45rem 0;
   border-top: 1px solid #ececec;
 }
 
@@ -318,6 +379,23 @@ section {
   font-size: 0.88rem;
 }
 
+.publication-figure {
+  overflow: hidden;
+  height: 126px;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--soft);
+}
+
+.publication-figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+
 .project {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 180px;
@@ -369,6 +447,21 @@ section {
   font-size: 0.83rem;
 }
 
+.project-figure {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  margin: 0.75rem 0 0;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: #252525;
+}
+
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .timeline {
   margin: 0;
   padding: 0;
@@ -406,21 +499,6 @@ section {
   font-size: 0.93rem;
 }
 
-.two-column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
-.two-column section {
-  padding-bottom: 3.5rem;
-}
-
-.two-column .section-heading {
-  display: block;
-  margin-bottom: 1.2rem;
-}
-
 .compact-list {
   margin: 0;
   padding: 0;
@@ -447,6 +525,13 @@ section {
   margin-top: 0.2rem;
   color: var(--muted);
   font-size: 0.88rem;
+}
+
+.awards-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2rem;
+  margin-left: calc(180px + 2.5rem);
 }
 
 footer {
@@ -511,6 +596,12 @@ footer p {
     margin-left: 0;
   }
 
+  .education-grid,
+  .awards-list {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
   .research-areas article {
     grid-template-columns: 1fr;
     gap: 0.3rem;
@@ -518,6 +609,12 @@ footer p {
 
   .publication {
     grid-template-columns: 70px minmax(0, 1fr);
+  }
+
+  .publication-figure {
+    grid-column: 2;
+    width: min(100%, 360px);
+    height: 150px;
   }
 
   .project {
@@ -533,11 +630,6 @@ footer p {
   .timeline li {
     grid-template-columns: 1fr;
     gap: 0.3rem;
-  }
-
-  .two-column {
-    grid-template-columns: 1fr;
-    gap: 0;
   }
 
   .footer-inner {

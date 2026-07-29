@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="He Zhang is an AI researcher working on reinforcement learning, multimodal representation learning, robot control, and embodied intelligence.">
+    <meta name="description" content="He Zhang is an AI researcher working on reinforcement learning, robot learning, embodied intelligence, and autonomous lifelong learning.">
     <meta property="og:title" content="He Zhang — AI Researcher">
-    <meta property="og:description" content="Research in reinforcement learning, multimodal representation learning, robot control, and embodied intelligence.">
+    <meta property="og:description" content="Research in reinforcement learning, robot learning, embodied intelligence, and autonomous lifelong learning.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zhhe11.github.io/">
     <meta property="og:image" content="https://zhhe11.github.io/og.png">
@@ -14,7 +14,7 @@
     <meta property="og:image:height" content="907">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="He Zhang — AI Researcher">
-    <meta name="twitter:description" content="Research in reinforcement learning, multimodal representation learning, robot control, and embodied intelligence.">
+    <meta name="twitter:description" content="Research in reinforcement learning, robot learning, embodied intelligence, and autonomous lifelong learning.">
     <meta name="twitter:image" content="https://zhhe11.github.io/og.png">
     <title>He Zhang — AI Researcher</title>
     <link rel="stylesheet" href="/site.css">
@@ -24,10 +24,10 @@
       <div class="page header-inner">
         <a class="site-name" href="#top">He Zhang</a>
         <nav aria-label="Primary navigation">
+          <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#project">Open Source</a>
           <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
         </nav>
       </div>
     </header>
@@ -37,28 +37,96 @@
         <div class="intro-copy">
           <h1>He Zhang <span>张贺</span></h1>
           <div class="identity-lines">
-            <p><strong>Ph.D.</strong><span>Ph.D. Candidate in Artificial Intelligence, HKUST(GZ)</span></p>
+            <p><strong>Ph.D.</strong><span>Ph.D. Candidate in Artificial Intelligence, <a href="https://www.hkust-gz.edu.cn/" target="_blank" rel="noreferrer">HKUST(GZ)</a></span></p>
             <p><strong>Current</strong><span>Algorithm Engineer, AI² Robotics</span></p>
+            <p><strong>Education</strong><span>B.E. in Automation, <a href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noreferrer">Tsinghua University</a></span></p>
             <p><strong>Email</strong><span><a href="mailto:zhanghe18@tsinghua.org.cn">zhanghe18@tsinghua.org.cn</a></span></p>
           </div>
-          <p class="intro-text">
-            I am advised by Prof. Hui Xiong and Asst. Prof. Ying Sun. My research focuses
-            on reinforcement learning, multimodal representation learning, robot control,
-            and embodied intelligence.
-          </p>
+        </div>
+        <img class="portrait" src="/images/he-zhang-portrait.png" alt="Portrait of He Zhang" width="190" height="220">
+        <div class="intro-about">
+          <div class="intro-text">
+            <p>
+              Hi! I am a Ph.D. Candidate in Artificial Intelligence at the Hong Kong
+              University of Science and Technology (Guangzhou), advised by
+              Prof. Hui Xiong and Prof. Ying Sun. I am also an Algorithm Engineer
+              at AI² Robotics, where I work on vision-language-action models,
+              reinforcement learning, and real-world robot deployment.
+            </p>
+            <p>
+              Before my doctoral studies, I received my B.E. in Automation from
+              Tsinghua University in 2022. My previous research and engineering
+              experience includes Shanghai AI Laboratory, OPPO, Microsoft Research
+              Asia, and Xiaomi.
+            </p>
+            <p>
+              My research lies at the intersection of reinforcement learning,
+              multimodal behavior learning, robot control, and embodied intelligence.
+              I am especially interested in agents that learn through their own
+              interaction with the physical world.
+            </p>
+          </div>
           <div class="contact-links">
             <a href="https://scholar.google.com/citations?user=SnTE2BYAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
             <a href="https://github.com/ZhHe11" target="_blank" rel="noreferrer">GitHub</a>
             <a href="/He-Zhang-CV.pdf" target="_blank" rel="noreferrer">CV</a>
           </div>
         </div>
-        <img class="portrait" src="/images/he-zhang-portrait.png" alt="Portrait of He Zhang" width="190" height="220">
       </section>
 
-      <div class="research-interests">
-        <strong>Research interests</strong>
-        <p>Reinforcement Learning · Multimodal Representation Learning · Robot Control · Embodied Intelligence</p>
-      </div>
+      <section id="research">
+        <div class="section-heading">
+          <h2>Research</h2>
+          <p>Learning agents that acquire knowledge and skills through physical interaction.</p>
+        </div>
+        <div class="research-statement">
+          <p class="research-lead">
+            My long-term goal is to build embodied agents that can autonomously explore
+            dynamic environments, discover reusable physical and causal structure, and
+            continually improve their behavior. Rather than learning only from static,
+            human-collected datasets, I want robots to actively generate informative
+            experience and use it to guide the next cycle of learning and control.
+          </p>
+          <div class="research-areas">
+            <article>
+              <h3>Autonomous Exploration &amp; Skill Discovery</h3>
+              <p>
+                Learning diverse, reusable skills without dense task supervision, and
+                selecting interactions that expose uncertainty, regret, or prediction error.
+              </p>
+            </article>
+            <article>
+              <h3>Intervenable Multimodal Behavior</h3>
+              <p>
+                Building efficient multimodal policies whose behavior can be selected,
+                adapted, and improved through reinforcement learning and human guidance.
+              </p>
+            </article>
+            <article>
+              <h3>World Models &amp; Lifelong Robot Learning</h3>
+              <p>
+                Learning action-conditioned models of the physical world, accumulating
+                knowledge and skills over time, and adapting across objects and environments.
+              </p>
+            </article>
+          </div>
+          <div class="current-plan">
+            <strong>Current research plan</strong>
+            <p>
+              I am exploring embodied scientific discovery: a robot designs and executes
+              its own physical experiments—pushing, pulling, grasping, releasing, and
+              colliding with objects—to recover relationships among force, mass,
+              acceleration, friction, and contact. The central test is whether the
+              discovered structure supports counterfactual prediction and improves
+              control and adaptation on unseen objects.
+            </p>
+          </div>
+          <p class="interest-line">
+            <strong>Interests:</strong> Reinforcement Learning · Robot Learning ·
+            Multimodal Imitation · World Models · Continual Learning · Embodied Intelligence
+          </p>
+        </div>
+      </section>
 
       <section id="publications">
         <div class="section-heading">

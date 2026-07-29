@@ -1,9 +1,12 @@
 :root {
-  --text: #252525;
-  --muted: #666;
-  --link: #245b8f;
-  --border: #dedede;
-  --soft: #f6f7f8;
+  --text: #20262d;
+  --muted: #65717c;
+  --blue: #1f5f91;
+  --blue-dark: #174b73;
+  --blue-soft: #edf5fb;
+  --link: #21699f;
+  --border: #ced8e1;
+  --soft: #f7f9fb;
   --white: #fff;
 }
 
@@ -46,7 +49,7 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--blue);
   background: rgba(255, 255, 255, 0.97);
 }
 
@@ -58,7 +61,7 @@ a:focus-visible {
 }
 
 .site-name {
-  color: var(--text);
+  color: var(--blue-dark);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.35rem;
   font-weight: 700;
@@ -76,16 +79,19 @@ nav {
 }
 
 nav a {
-  color: #404040;
+  color: var(--blue-dark);
   font-size: 0.91rem;
+  font-weight: 550;
 }
 
 .intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;
-  gap: 3.5rem;
+  column-gap: 3.5rem;
+  row-gap: 1.5rem;
   align-items: start;
-  padding: 3.75rem 0 3rem;
+  padding: 3.75rem 0 3.25rem;
+  border-top: 0;
 }
 
 .portrait {
@@ -100,6 +106,7 @@ nav a {
 .intro h1 {
   margin: -0.3rem 0 1.35rem;
   font-family: Georgia, "Times New Roman", serif;
+  color: var(--blue-dark);
   font-size: clamp(2rem, 4vw, 2.55rem);
   font-weight: 600;
   letter-spacing: -0.025em;
@@ -128,14 +135,25 @@ nav a {
 }
 
 .identity-lines strong {
-  color: var(--muted);
+  color: var(--blue-dark);
   font-size: 0.9rem;
   font-weight: 600;
 }
 
 .intro-text {
-  max-width: 700px;
-  margin: 0;
+  max-width: 820px;
+}
+
+.intro-about {
+  grid-column: 1 / -1;
+}
+
+.intro-text p {
+  margin: 0 0 0.8rem;
+}
+
+.intro-text p:last-child {
+  margin-bottom: 0;
 }
 
 .contact-links {
@@ -146,28 +164,9 @@ nav a {
   font-size: 0.94rem;
 }
 
-.research-interests {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 2.5rem;
-  padding: 1.35rem 0;
-  border-top: 1px solid var(--border);
-}
-
-.research-interests strong {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.research-interests p {
-  margin: 0;
-  color: #444;
-}
-
 section {
-  padding: 3rem 0;
-  border-top: 1px solid var(--border);
+  padding: 3.25rem 0 3.5rem;
+  border-top: 2px solid var(--blue);
 }
 
 .section-heading {
@@ -180,6 +179,7 @@ section {
 
 .section-heading h2 {
   margin: 0;
+  color: var(--blue-dark);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.65rem;
   font-weight: 600;
@@ -189,6 +189,68 @@ section {
   max-width: 650px;
   margin: 0.1rem 0 0;
   color: var(--muted);
+}
+
+.research-statement {
+  margin-left: calc(180px + 2.5rem);
+}
+
+.research-lead {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.research-areas {
+  margin: 1.65rem 0 1.8rem;
+  border-top: 1px solid var(--border);
+}
+
+.research-areas article {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.research-areas h3 {
+  margin: 0;
+  color: var(--blue-dark);
+  font-size: 0.98rem;
+  font-weight: 650;
+}
+
+.research-areas p {
+  margin: 0;
+  color: #4e5b66;
+  font-size: 0.93rem;
+}
+
+.current-plan {
+  margin: 1.75rem 0 1.4rem;
+  padding: 1rem 1.15rem;
+  border-left: 4px solid var(--blue);
+  background: var(--blue-soft);
+}
+
+.current-plan strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--blue-dark);
+}
+
+.current-plan p,
+.interest-line {
+  margin: 0;
+}
+
+.interest-line {
+  color: #4e5b66;
+  font-size: 0.93rem;
+}
+
+.interest-line strong {
+  color: var(--blue-dark);
 }
 
 .publication-list {
@@ -217,7 +279,7 @@ section {
 
 .publication-meta strong {
   display: block;
-  color: var(--text);
+  color: var(--blue-dark);
   font-weight: 600;
 }
 
@@ -229,7 +291,7 @@ section {
 }
 
 .publication h3 a {
-  color: var(--text);
+  color: var(--blue-dark);
 }
 
 .publication-authors,
@@ -267,6 +329,10 @@ section {
 .project h3 {
   margin: 0 0 0.5rem;
   font-size: 1.15rem;
+}
+
+.project h3 a {
+  color: var(--blue-dark);
 }
 
 .project p {
@@ -330,7 +396,7 @@ section {
 
 .timeline-company {
   margin: 0.18rem 0 0;
-  color: var(--muted);
+  color: var(--blue-dark);
   font-size: 0.88rem;
 }
 
@@ -372,6 +438,7 @@ section {
 }
 
 .compact-list strong {
+  color: var(--blue-dark);
   font-size: 0.98rem;
   font-weight: 650;
 }
@@ -384,7 +451,7 @@ section {
 
 footer {
   padding: 2.5rem 0 3.5rem;
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--blue);
   color: var(--muted);
   font-size: 0.87rem;
 }
@@ -416,8 +483,7 @@ footer p {
   }
 
   .intro,
-  .section-heading,
-  .research-interests {
+  .section-heading {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
@@ -434,6 +500,20 @@ footer p {
 
   .intro-copy {
     grid-row: 2;
+  }
+
+  .intro-about {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .research-statement {
+    margin-left: 0;
+  }
+
+  .research-areas article {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
   }
 
   .publication {

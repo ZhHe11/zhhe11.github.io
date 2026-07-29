@@ -28,7 +28,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site/images
-          cp index.html site.css He-Zhang-CV.pdf og.png _site/
+          cp index.html site.css He-Zhang-CV.pdf og.png robots.txt sitemap.xml _site/
           cp -R images/. _site/images/
           touch _site/.nojekyll
 

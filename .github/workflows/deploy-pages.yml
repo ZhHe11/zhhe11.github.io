@@ -28,7 +28,9 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site/images
-          cp index.html site.css He-Zhang-CV.pdf og.png robots.txt sitemap.xml google6e675bddd4b9fd2b.html _site/
+          cp index.html site.css He-Zhang-CV.pdf og.png robots.txt sitemap.xml google6e675bddd4b9fd2b.html \
+            favicon.ico favicon-48x48.png favicon-192x192.png favicon-512x512.png \
+            apple-touch-icon.png site.webmanifest _site/
           cp -R images/. _site/images/
           touch _site/.nojekyll
 

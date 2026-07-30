@@ -1,0 +1,19 @@
+{
+  "name": "He Zhang Academic Homepage",
+  "short_name": "He Zhang",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#174b73",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

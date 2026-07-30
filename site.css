@@ -388,7 +388,8 @@ section {
   background: var(--soft);
 }
 
-.publication-figure img {
+.publication-figure img,
+.publication-figure video {
   display: block;
   width: 100%;
   height: 100%;

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f8fafc"><meta name="author" content="He Zhang"><meta name="robots" content="index, follow">
+    <meta name="description" content="He Zhang's research notes on active exploration, informative interaction, skill discovery, physical cost, and safety in robot learning.">
+    <link rel="canonical" href="https://zhhe11.github.io/writing/active-exploration/"><meta property="og:title" content="Active Exploration in the Physical World"><meta property="og:description" content="How embodied agents might choose interactions that are informative, reusable, and safe."><meta property="og:type" content="article"><meta property="og:url" content="https://zhhe11.github.io/writing/active-exploration/"><meta property="og:image" content="https://zhhe11.github.io/og-blog.png">
+    <title>Active Exploration in the Physical World — He Zhang</title><link rel="stylesheet" href="/site.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Active Exploration in the Physical World","dateModified":"2026-08-25","author":{"@type":"Person","@id":"https://zhhe11.github.io/#person","name":"He Zhang"},"mainEntityOfPage":"https://zhhe11.github.io/writing/active-exploration/"}</script>
+  </head>
+  <body>
+    <header class="site-header"><div class="page header-inner"><a class="site-name" href="/">He Zhang / 张贺<small>HKUST(GZ) · Tsinghua University</small></a><nav class="site-nav"><a href="/">Home</a><a href="/writing/" aria-current="page">Writing</a><a href="/#research">Research</a><a href="/#about">About</a><a href="/He-Zhang-CV.pdf">CV</a></nav></div></header>
+    <main class="article-shell">
+      <header class="article-header"><p class="article-label">Research Idea · Robot Learning</p><h1>Active Exploration in the Physical World</h1><p class="article-deck">An embodied agent should choose interactions because they are informative, reusable, or resolve uncertainty.</p><div class="article-byline"><span>He Zhang / 张贺</span><span>Updated August 2026</span><span>Research direction</span></div></header>
+      <article class="article-body">
+        <p class="lead">Today’s vision-language-action systems are largely imitation-driven: they inherit the coverage of their datasets and often fall back to broad trial and error outside it.</p>
+        <h2>Choosing what to experience</h2>
+        <p>A more capable agent should choose interactions because they reveal reusable structure, distinguish several plausible behaviors, or reduce uncertainty about the physical world. Exploration should improve both the data an agent collects and the representation it learns.</p>
+        <p>I see three complementary loops: external feedback from people or model critics; online reinforcement learning for internal policy improvement; and behavioral abstraction through unsupervised, regret-aware skill induction and multimodal action modeling.</p>
+        <h2>Physical exploration has a cost</h2>
+        <p>Unlike exploration in a simulator, robot interaction consumes time, energy, and hardware life, and can create safety risks. Information gain alone is therefore insufficient. The objective has to account for physical cost and the future utility of what is learned.</p>
+        <p class="open-question"><strong>Open question.</strong> What exploration objective can jointly balance information gain, skill coverage, regret, physical cost, and safety?</p>
+        <p class="article-discuss">This is a working note. <a href="mailto:zhanghe18@tsinghua.org.cn?subject=Discussion%3A%20Active%20Exploration">Discuss the direction</a> or return to the <a href="/writing/">writing archive</a>.</p>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="page footer-inner"><p>© 2026 He Zhang</p><p><a href="/writing/">← All writing</a></p></div></footer>
+  </body>
+</html>

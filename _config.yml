@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "He ZHANG"
-description              : "Second-year Ph.D. Student in HKUST(GZ). Focusing on Reinforcement Learning, Multimodal Represetation Learning and Robotics"
+title                    : "He Zhang / 张贺 — Research Notes"
+description              : "He Zhang (Zhang He, Zhanghe, 张贺) is a Ph.D. candidate at HKUST(GZ), Tsinghua University alumnus, and researcher in embodied AI, robot learning, reinforcement learning, and world models."
 repository               : "zhhe11/zhhe11.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -21,14 +21,14 @@ baidu_site_verification  : # code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "He ZHANG | 张贺"
-  avatar           : "images/profile-big.png"
-  bio              : # "Sea AI Lab"
+  name             : "He Zhang / 张贺"
+  avatar           : "images/he-zhang-portrait.png"
+  bio              : "Ph.D. Candidate at HKUST(GZ) · Tsinghua University alumnus · Embodied AI and robot learning"
   location         : "Guangzhou, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=SnTE2BYAAAAJ"
-  email            : "hzhang757@connect.hkust-gz.edu.cn"
+  email            : "zhanghe18@tsinghua.org.cn"
   researchgate     : 
   uri              :
   bitbucket        :
@@ -44,8 +44,8 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : # "rayeren"
-  dblp             : 
-  orcid            : 
+  dblp             : "https://dblp.org/pid/24/2058-30"
+  orcid            : "0009-0009-0800-8035"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

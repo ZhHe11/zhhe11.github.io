@@ -28,7 +28,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site/images _site/videos _site/ideas _site/writing
-          cp index.html site.css He-Zhang-CV.pdf og.png og-blog.png robots.txt sitemap.xml \
+          cp index.html site.css blog.css He-Zhang-CV.pdf og.png og-blog.png robots.txt sitemap.xml \
             google6e675bddd4b9fd2b.html googlea21da0bfe4bafabf.html \
             favicon.ico favicon-48x48.png favicon-192x192.png favicon-512x512.png \
             apple-touch-icon.png site.webmanifest _site/

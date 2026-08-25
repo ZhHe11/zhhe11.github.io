@@ -3,26 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f8fafc">
+    <meta name="theme-color" content="#ffffff">
     <meta name="author" content="He Zhang">
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="keywords" content="He Zhang, Zhang He, Zhanghe, 张贺, HKUST, HKUST(GZ), Tsinghua University, embodied AI, robot learning, reinforcement learning, world models, research notes">
-    <meta name="description" content="He Zhang (Zhang He, Zhanghe, 张贺) is a Ph.D. candidate at HKUST(GZ), Tsinghua University alumnus, and researcher writing about embodied AI, robot learning, reinforcement learning, and world models.">
-    <link rel="canonical" href="https://zhhe11.github.io/">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
+    <meta name="keywords" content="He Zhang, Zhang He, Zhanghe, 张贺, HKUST, HKUST(GZ), Tsinghua University, reinforcement learning, robot learning, embodied AI">
+    <meta name="description" content="He Zhang (Zhang He, Zhanghe, 张贺) is a Ph.D. candidate at HKUST(GZ) and a Tsinghua University alumnus researching reinforcement learning, robot learning, multimodal imitation, and embodied AI.">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta property="og:title" content="He Zhang / 张贺 — Notes on Embodied Intelligence">
-    <meta property="og:description" content="Research ideas, working notes, and publications on embodied intelligence, robot learning, reinforcement learning, and world models.">
+    <link rel="canonical" href="https://zhhe11.github.io/">
+    <meta property="og:title" content="He Zhang (Zhang He · Zhanghe · 张贺) — HKUST(GZ) & Tsinghua">
+    <meta property="og:description" content="HKUST(GZ) Ph.D. candidate, Tsinghua University alumnus, and researcher in reinforcement learning, robot learning, and embodied intelligence.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zhhe11.github.io/">
-    <meta property="og:site_name" content="He Zhang — Research Notes">
-    <meta property="og:image" content="https://zhhe11.github.io/og-blog.png">
+    <meta property="og:site_name" content="He Zhang Academic Homepage">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://zhhe11.github.io/og.png">
+    <meta property="og:image:width" content="1734">
+    <meta property="og:image:height" content="907">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="He Zhang / 张贺 — Notes on Embodied Intelligence">
-    <meta name="twitter:description" content="Research ideas, working notes, and publications on embodied intelligence.">
-    <meta name="twitter:image" content="https://zhhe11.github.io/og-blog.png">
-    <title>He Zhang / 张贺 — Notes on Embodied Intelligence</title>
+    <meta name="twitter:title" content="He Zhang (Zhang He · Zhanghe · 张贺) — HKUST(GZ) & Tsinghua">
+    <meta name="twitter:description" content="HKUST(GZ) Ph.D. candidate, Tsinghua University alumnus, and researcher in reinforcement learning, robot learning, and embodied intelligence.">
+    <meta name="twitter:image" content="https://zhhe11.github.io/og.png">
+    <title>He Zhang (Zhang He · Zhanghe · 张贺) | HKUST(GZ) · Tsinghua</title>
     <link rel="stylesheet" href="/site.css">
     <script type="application/ld+json">
       {
@@ -30,7 +34,7 @@
         "@type": "ProfilePage",
         "@id": "https://zhhe11.github.io/#profilepage",
         "url": "https://zhhe11.github.io/",
-        "name": "He Zhang (张贺) — Research Notes and Academic Homepage",
+        "name": "He Zhang (张贺) — Academic Homepage",
         "dateCreated": "2026-07-28",
         "dateModified": "2026-08-25",
         "mainEntity": {
@@ -46,10 +50,31 @@
           "image": "https://zhhe11.github.io/images/he-zhang-portrait.png",
           "email": "mailto:zhanghe18@tsinghua.org.cn",
           "jobTitle": "Ph.D. Candidate in Artificial Intelligence",
-          "affiliation": {"@type": "CollegeOrUniversity", "name": "The Hong Kong University of Science and Technology (Guangzhou)", "alternateName": "HKUST(GZ)", "url": "https://www.hkust-gz.edu.cn/"},
-          "alumniOf": {"@type": "CollegeOrUniversity", "name": "Tsinghua University", "url": "https://www.tsinghua.edu.cn/en/"},
-          "knowsAbout": ["Reinforcement Learning", "Robot Learning", "Embodied Artificial Intelligence", "Multimodal Imitation Learning", "World Models", "Continual Learning"],
-          "sameAs": ["https://scholar.google.com/citations?user=SnTE2BYAAAAJ", "https://github.com/ZhHe11", "https://orcid.org/0009-0009-0800-8035", "https://dblp.org/pid/24/2058-30"]
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "The Hong Kong University of Science and Technology (Guangzhou)",
+            "alternateName": "HKUST(GZ)",
+            "url": "https://www.hkust-gz.edu.cn/"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Tsinghua University",
+            "url": "https://www.tsinghua.edu.cn/en/"
+          },
+          "knowsAbout": [
+            "Reinforcement Learning",
+            "Robot Learning",
+            "Embodied Artificial Intelligence",
+            "Multimodal Imitation Learning",
+            "World Models",
+            "Continual Learning"
+          ],
+          "sameAs": [
+            "https://scholar.google.com/citations?user=SnTE2BYAAAAJ",
+            "https://github.com/ZhHe11",
+            "https://orcid.org/0009-0009-0800-8035",
+            "https://dblp.org/pid/24/2058-30"
+          ]
         }
       }
     </script>
@@ -57,186 +82,300 @@
   <body>
     <header class="site-header">
       <div class="page header-inner">
-        <a class="site-name" href="/" aria-label="He Zhang homepage">
-          He Zhang / 张贺
-          <small>HKUST(GZ) · Tsinghua University</small>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="/" aria-current="page">Home</a>
-          <a href="/writing/">Writing</a>
+        <a class="site-name" href="#top">He Zhang</a>
+        <nav aria-label="Primary navigation">
+          <a href="#education">Education</a>
           <a href="#research">Research</a>
-          <a href="#about">About</a>
-          <a href="/He-Zhang-CV.pdf">CV</a>
+          <a href="/writing/">Blog</a>
+          <a href="#publications">Publications</a>
+          <a href="#project">Open Source</a>
+          <a href="#experience">Experience</a>
         </nav>
       </div>
     </header>
 
     <main class="page">
-      <section class="hero" id="top">
-        <p class="eyebrow">Research notebook<br>August 2026</p>
-        <h1>Notes on machines that <em>perceive, learn, and act</em> in the physical world.</h1>
-        <div class="hero-copy">
-          <p>
-            I am a Ph.D. candidate in Artificial Intelligence at HKUST(GZ) and a
-            Tsinghua University alumnus. I study embodied AI, robot learning,
-            reinforcement learning, and representations that connect perception,
-            prediction, decision-making, and control.
-          </p>
-          <div class="topic-line" aria-label="Research topics">
-            <span>Embodied AI</span><span>Robot Learning</span><span>World Models</span><span>RL</span>
+      <section class="intro" id="top">
+        <div class="intro-copy">
+          <h1>He Zhang <span>张贺 · Zhang He · Zhanghe</span></h1>
+          <div class="identity-lines">
+            <p><strong>Ph.D.</strong><span>Ph.D. Candidate in Artificial Intelligence, <a href="https://www.hkust-gz.edu.cn/" target="_blank" rel="noreferrer">HKUST(GZ)</a></span></p>
+            <p><strong>Education</strong><span>B.E. in Automation, <a href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noreferrer">Tsinghua University</a></span></p>
+            <p><strong>Email</strong><span><a href="mailto:zhanghe18@tsinghua.org.cn">zhanghe18@tsinghua.org.cn</a></span></p>
           </div>
-          <div class="profile-links">
-            <a href="https://scholar.google.com/citations?user=SnTE2BYAAAAJ" target="_blank" rel="me noreferrer">Scholar</a>
-            <a href="https://github.com/ZhHe11" target="_blank" rel="me noreferrer">GitHub</a>
+        </div>
+        <img class="portrait" src="/images/he-zhang-portrait.png" alt="Portrait of He Zhang" width="190" height="220">
+        <div class="intro-about">
+          <div class="intro-text">
+            <p>
+              Hi! I am a Ph.D. Candidate in Artificial Intelligence at the Hong Kong
+              University of Science and Technology (Guangzhou), advised by
+              Prof. Hui Xiong.
+            </p>
+            <p>
+              I received my B.E. in Automation from Tsinghua University in 2022.
+              My research combines reinforcement learning, multimodal behavior
+              learning, robot control, and embodied intelligence.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="https://scholar.google.com/citations?user=SnTE2BYAAAAJ" target="_blank" rel="me noreferrer">Google Scholar</a>
             <a href="https://orcid.org/0009-0009-0800-8035" target="_blank" rel="me noreferrer">ORCID</a>
-            <a href="mailto:zhanghe18@tsinghua.org.cn">Email</a>
+            <a href="https://dblp.org/pid/24/2058-30" target="_blank" rel="me noreferrer">DBLP</a>
+            <a href="https://github.com/ZhHe11" target="_blank" rel="me noreferrer">GitHub</a>
+            <a href="/He-Zhang-CV.pdf" target="_blank" rel="noreferrer">CV</a>
           </div>
         </div>
       </section>
 
-      <section class="index-section" aria-labelledby="writing-title">
-        <aside class="index-sidebar">
-          <p class="section-kicker">Index</p>
-          <nav class="category-list" aria-label="Writing categories">
-            <a href="/writing/#research-ideas">Research Ideas <b>03</b></a>
-            <a href="/writing/#talk-notes">Talk Notes <b>02</b></a>
-            <a href="/writing/#reading-notes">Reading Notes <b>01</b></a>
-            <a href="#research">Selected Research <b>06</b></a>
-          </nav>
-          <p class="sidebar-note">
-            <strong>Working in public</strong>
-            These notes are evolving hypotheses rather than finished claims. If a question overlaps with your work, I would be glad to discuss it.
+      <section id="education">
+        <div class="section-heading">
+          <h2>Education</h2>
+          <p>Academic training in artificial intelligence and automation.</p>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <div class="institution-logo hkust-logo">
+              <img src="/images/institutions/hkust-gz.png" alt="HKUST Guangzhou" loading="lazy">
+            </div>
+            <div>
+              <span>2022 - Present</span>
+              <h3>Ph.D. Candidate, Artificial Intelligence</h3>
+              <p>The Hong Kong University of Science and Technology (Guangzhou)</p>
+            </div>
+          </article>
+          <article class="education-card">
+            <div class="institution-logo tsinghua-logo">
+              <img src="/images/institutions/tsinghua.png" alt="Tsinghua University" loading="lazy">
+            </div>
+            <div>
+              <span>2018 - 2022</span>
+              <h3>B.E., Automation</h3>
+              <p>Tsinghua University</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="research">
+        <div class="section-heading">
+          <h2>Research</h2>
+          <p>Learning agents that acquire knowledge and skills through physical interaction.</p>
+        </div>
+        <div class="research-statement">
+          <p class="research-lead">
+            I aim to build embodied agents that explore autonomously, discover reusable
+            physical and causal structure, and improve continuously through interaction.
           </p>
-        </aside>
-
-        <div>
-          <div class="writing-head">
-            <h2 id="writing-title">Notes / Ideas</h2>
-            <a href="/writing/">View the archive →</a>
+          <div class="research-areas">
+            <article>
+              <h3>Autonomous Exploration &amp; Skill Discovery</h3>
+              <p>
+                Reusable skills and informative interactions without dense supervision.
+              </p>
+            </article>
+            <article>
+              <h3>Intervenable Multimodal Behavior</h3>
+              <p>
+                Efficient policies whose behavior can be selected, adapted, and improved.
+              </p>
+            </article>
+            <article>
+              <h3>World Models &amp; Lifelong Robot Learning</h3>
+              <p>
+                Action-conditioned world models that accumulate knowledge without forgetting.
+              </p>
+            </article>
           </div>
-          <a class="featured-post" href="/writing/three-layer-architecture/">
-            <div class="meta"><strong>Featured essay</strong>Research idea<br>Updated Aug 2026</div>
-            <div>
-              <h3>Toward a Three-Layer Architecture for Embodied Intelligence</h3>
-              <p>A working framework for connecting short-horizon action generation, reusable skills and habits, and goal-directed composition.</p>
-            </div>
-            <span class="read-time">6 min</span>
-          </a>
-          <div class="post-list">
-            <a class="post-row" href="/writing/world-models/">
-              <div class="meta"><strong>World models</strong>Research idea</div>
-              <h3>What Should a World Model Represent?</h3>
-              <span class="count">02</span>
-            </a>
-            <a class="post-row" href="/writing/active-exploration/">
-              <div class="meta"><strong>Robot learning</strong>Research idea</div>
-              <h3>Active Exploration in the Physical World</h3>
-              <span class="count">03</span>
-            </a>
-            <a class="post-row" href="/writing/ai-evolution/">
-              <div class="meta"><strong>AI evolution</strong>Talk notes</div>
-              <h3>Where Might the Next Discontinuities Appear?</h3>
-              <span class="count">04</span>
-            </a>
-            <a class="post-row" href="/writing/reading-embodied-intelligence/">
-              <div class="meta"><strong>Reading log</strong>Book notes</div>
-              <h3>Reading <em>Embodied Intelligence</em> by Yunhao Liu</h3>
-              <span class="count">05</span>
-            </a>
+          <div class="current-plan">
+            <strong>Current research plan</strong>
+            <p>
+              I am exploring embodied scientific discovery: robots autonomously conduct
+              physical experiments, recover relationships among force, mass, acceleration,
+              friction, and contact, then use them for prediction and control.
+            </p>
           </div>
-          <a class="archive-link" href="/writing/">All writing and notes →</a>
+          <p class="interest-line">
+            <strong>Interests:</strong> Reinforcement Learning · Robot Learning ·
+            Multimodal Imitation · World Models · Continual Learning · Embodied Intelligence
+          </p>
+          <p class="research-notes-link">
+            <a href="/writing/">Read my blog, working ideas, and notes →</a>
+          </p>
         </div>
       </section>
 
-      <section class="site-section" id="research">
-        <div class="section-head">
-          <h2>Selected Research</h2>
-          <p>First-author and collaborative work on multimodal policies, skill discovery, reinforcement learning, and embodied agents.</p>
-          <a href="https://scholar.google.com/citations?user=SnTE2BYAAAAJ" target="_blank" rel="me noreferrer">Google Scholar →</a>
+      <section id="publications">
+        <div class="section-heading">
+          <h2>Publications</h2>
+          <p>Selected first-author and collaborative research. My name is shown in bold.</p>
         </div>
-        <div class="research-grid">
-          <a class="research-item" href="https://arxiv.org/abs/2607.10206" target="_blank" rel="noreferrer">
-            <span class="venue">Under Review<br>2026</span>
-            <div><h3>Source-Lifted Flow Matching for Intervenable Multimodal Imitation</h3><p><strong>He Zhang</strong>, Ying Sun, Hui Xiong</p></div>
-          </a>
-          <a class="research-item" href="https://arxiv.org/abs/2605.22283" target="_blank" rel="noreferrer">
-            <span class="venue">arXiv<br>2026</span>
-            <div><h3>Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action</h3><p>Pengteng Li, Weiyu Guo, <strong>He Zhang</strong>, et al.</p></div>
-          </a>
-          <a class="research-item" href="https://arxiv.org/abs/2603.14245" target="_blank" rel="noreferrer">
-            <span class="venue">ICLR<br>2026</span>
-            <div><h3>GoldenStart: Q-Guided Priors and Entropy Control for Distilling Flow Policies</h3><p><strong>He Zhang</strong>, Ying Sun, Hui Xiong</p></div>
-          </a>
-          <a class="research-item" href="https://arxiv.org/abs/2601.14628" target="_blank" rel="noreferrer">
-            <span class="venue">arXiv<br>2026</span>
-            <div><h3>A Brain-Inspired Embodied Intelligence for Fluid and Fast Reflexive Robotics Control</h3><p>Weiyu Guo, <strong>He Zhang</strong>, Pengteng Li, et al.</p></div>
-          </a>
-          <a class="research-item" href="https://proceedings.mlr.press/v267/zhang25dp.html" target="_blank" rel="noreferrer">
-            <span class="venue">ICML<br>2025</span>
-            <div><h3>Efficient Skill Discovery via Regret-Aware Optimization</h3><p><strong>He Zhang</strong>, Ming Zhou, Shaopeng Zhai, Ying Sun, Hui Xiong</p></div>
-          </a>
-          <a class="research-item" href="https://doi.org/10.1145/3581783.3612420" target="_blank" rel="noreferrer">
-            <span class="venue">ACM MM<br>2023</span>
-            <div><h3>Interactive Interior Design Recommendation via Coarse-to-fine Multimodal Reinforcement Learning</h3><p><strong>He Zhang</strong>, Ying Sun, Weiyu Guo, et al.</p></div>
-          </a>
-        </div>
-        <div class="project-strip">
-          <h3>AlphaBrain Platform</h3>
-          <p>Core contributor and one of the lead open-source developers of an embodied-intelligence framework spanning VLA fine-tuning, reinforcement learning, world models, continual learning, and evaluation.</p>
-          <a href="https://github.com/AlphaBrainGroup/AlphaBrain" target="_blank" rel="noreferrer">View project →</a>
-        </div>
+        <ol class="publication-list">
+          <li class="publication">
+            <div class="publication-meta"><strong>Under Review</strong>2026</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2607.10206" target="_blank" rel="noreferrer">Source-Lifted Flow Matching for Intervenable Multimodal Imitation</a></h3>
+              <p class="publication-authors"><strong>He Zhang</strong>, Ying Sun, Hui Xiong</p>
+              <p class="publication-description">Source-intervenable flow policies for controllable multimodal robot behavior.</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2607.10206" target="_blank" rel="noreferrer">Paper</a></p>
+            </div>
+            <figure class="publication-figure">
+              <img src="/images/publications/source-lifted-2026.jpg" alt="Source-Lifted Flow Matching method overview" loading="lazy">
+            </figure>
+          </li>
+          <li class="publication">
+            <div class="publication-meta"><strong>Collaborative</strong>arXiv 2026</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2605.22283" target="_blank" rel="noreferrer">Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action</a></h3>
+              <p class="publication-authors">Pengteng Li, Weiyu Guo, <strong>He Zhang</strong>, Tiefu Cai, Xiao He, Yandong Guo, Hui Xiong</p>
+              <p class="publication-description">SOMA equips VLA policies with persistent spatial-semantic memory for manipulating targets beyond the current camera view.</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2605.22283" target="_blank" rel="noreferrer">Paper</a></p>
+            </div>
+            <figure class="publication-figure">
+              <video controls muted loop playsinline preload="metadata" poster="/images/publications/soma-2026.jpg" aria-label="SOMA out-of-vision manipulation demonstration">
+                <source src="/videos/soma-oov-manipulation.mp4" type="video/mp4">
+              </video>
+            </figure>
+          </li>
+          <li class="publication">
+            <div class="publication-meta"><strong>ICLR 2026</strong>2026</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2603.14245" target="_blank" rel="noreferrer">GoldenStart: Q-Guided Priors and Entropy Control for Distilling Flow Policies</a></h3>
+              <p class="publication-authors"><strong>He Zhang</strong>, Ying Sun, Hui Xiong</p>
+              <p class="publication-description">Q-guided priors and explicit entropy control for efficient continuous-control policies.</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2603.14245" target="_blank" rel="noreferrer">Paper</a></p>
+            </div>
+            <figure class="publication-figure">
+              <img src="/images/publications/goldenstart-iclr-2026.jpg" alt="GoldenStart Q-guided prior illustration" loading="lazy">
+            </figure>
+          </li>
+          <li class="publication">
+            <div class="publication-meta"><strong>Collaborative</strong>arXiv 2026</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2601.14628" target="_blank" rel="noreferrer">A Brain-Inspired Embodied Intelligence for Fluid and Fast Reflexive Robotics Control</a></h3>
+              <p class="publication-authors">Weiyu Guo, <strong>He Zhang</strong>, Pengteng Li, Tiefu Cai, Ziyang Chen, Yandong Guo, Xiao He, Yongkui Yang, Ying Sun, Hui Xiong</p>
+              <p class="publication-description">NeuroVLA organizes semantic planning, adaptive motor control, and fast reflexes into a cortex-cerebellum-spinal hierarchy.</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2601.14628" target="_blank" rel="noreferrer">Paper</a></p>
+            </div>
+            <figure class="publication-figure">
+              <video controls muted loop playsinline preload="metadata" poster="/images/publications/neurovla-2026.jpg" aria-label="NeuroVLA collision-recovery demonstration">
+                <source src="/videos/neurovla-reflex.mp4" type="video/mp4">
+              </video>
+            </figure>
+          </li>
+          <li class="publication">
+            <div class="publication-meta"><strong>ICML 2025</strong>2025</div>
+            <div>
+              <h3><a href="https://proceedings.mlr.press/v267/zhang25dp.html" target="_blank" rel="noreferrer">Efficient Skill Discovery via Regret-Aware Optimization</a></h3>
+              <p class="publication-authors"><strong>He Zhang</strong>, Ming Zhou, Shaopeng Zhai, Ying Sun, Hui Xiong</p>
+              <p class="publication-description">A regret-aware min-max framework for improving skill-learning efficiency and diversity.</p>
+              <p class="paper-links"><a href="https://proceedings.mlr.press/v267/zhang25dp.html" target="_blank" rel="noreferrer">Paper</a></p>
+            </div>
+            <figure class="publication-figure">
+              <img src="/images/publications/skill-discovery-icml-2025.jpg" alt="Regret-aware skill discovery overview" loading="lazy">
+            </figure>
+          </li>
+          <li class="publication">
+            <div class="publication-meta"><strong>ACM MM</strong>2023</div>
+            <div>
+              <h3><a href="https://doi.org/10.1145/3581783.3612420" target="_blank" rel="noreferrer">Interactive Interior Design Recommendation via Coarse-to-fine Multimodal Reinforcement Learning</a></h3>
+              <p class="publication-authors"><strong>He Zhang</strong>, Ying Sun, Weiyu Guo, Yafei Liu, Haonan Lu, Xiaodong Lin, Hui Xiong</p>
+              <p class="publication-description">Multi-turn recommendation that learns latent user preferences through reinforcement learning.</p>
+              <p class="paper-links"><a href="https://doi.org/10.1145/3581783.3612420" target="_blank" rel="noreferrer">Paper</a></p>
+            </div>
+            <figure class="publication-figure">
+              <img src="/images/publications/acm-mm-2023.jpg" alt="Interactive interior design recommendation system" loading="lazy">
+            </figure>
+          </li>
+        </ol>
       </section>
 
-      <section class="site-section" id="about">
-        <div class="section-head">
-          <h2>About / Record</h2>
-          <p>A compact academic record. For the full version, see my CV.</p>
-          <a href="/He-Zhang-CV.pdf">Download CV →</a>
+      <section id="project">
+        <div class="section-heading">
+          <h2>Open source</h2>
+          <p>Selected open-source work in embodied intelligence.</p>
         </div>
-        <div class="about-grid">
-          <div class="profile-card">
-            <img src="/images/he-zhang-portrait.png" alt="Portrait of He Zhang" width="104" height="120">
-            <p><strong>He Zhang / 张贺</strong></p>
-            <p>Ph.D. Candidate, Artificial Intelligence</p>
-            <p>HKUST(GZ)</p>
-            <p>Tsinghua University alumnus</p>
+        <article class="project">
+          <div>
+            <h3><a href="https://github.com/AlphaBrainGroup/AlphaBrain" target="_blank" rel="noreferrer">AlphaBrain Platform</a></h3>
+            <p>
+              Core contributor to an open-source embodied-intelligence framework covering
+              VLA architectures, world models, continual learning, reinforcement learning,
+              shared training, and evaluation infrastructure.
+            </p>
+            <ul>
+              <li>Developed RLT/RLT_a and PPO/GRPO trainers.</li>
+              <li>Integrated Qwen and π₀.₅ for VLA fine-tuning and online RL.</li>
+              <li>Refactored LIBERO evaluation and distributed execution.</li>
+            </ul>
           </div>
-          <div class="record-columns">
-            <div>
-              <section class="record-group">
-                <h3>Education</h3>
-                <ul class="record-list">
-                  <li><span>2022—</span><strong>Ph.D. in Artificial Intelligence, HKUST(GZ)</strong></li>
-                  <li><span>2018—22</span><strong>B.E. in Automation, Tsinghua University</strong></li>
-                </ul>
-              </section>
-              <section class="record-group">
-                <h3>Awards</h3>
-                <ul class="record-list">
-                  <li><span>2025</span><strong>CAST Young Science and Technology Talent Development Program</strong></li>
-                  <li><span>2020</span><strong>Comprehensive Excellence Scholarship, Tsinghua University</strong></li>
-                </ul>
-              </section>
-            </div>
-            <section class="record-group">
-              <h3>Experience</h3>
-              <ul class="record-list">
-                <li><span>2025—26</span><strong>Algorithm Engineer, AI² Robotics</strong></li>
-                <li><span>2024—25</span><strong>Algorithm Intern, Shanghai AI Laboratory</strong></li>
-                <li><span>2022—23</span><strong>Algorithm Intern, OPPO</strong></li>
-                <li><span>2022—23</span><strong>Remote Research Intern, Microsoft Research Asia</strong></li>
-                <li><span>2021</span><strong>Algorithm Intern, Xiaomi</strong></li>
-              </ul>
-            </section>
+          <div class="project-aside">
+            <strong>43</strong>
+            <span>public commits · first by commit count</span>
+            <a href="https://github.com/AlphaBrainGroup/AlphaBrain" target="_blank" rel="noreferrer">View on GitHub</a>
           </div>
+          <figure class="project-figure">
+            <img src="/images/projects/alphabrain-main.png" alt="AlphaBrain platform reinforcement learning capabilities" loading="lazy">
+          </figure>
+        </article>
+      </section>
+
+      <section id="experience">
+        <div class="section-heading">
+          <h2>Experience</h2>
+          <p>Research and engineering experience, ordered from most recent.</p>
         </div>
+        <ol class="timeline">
+          <li>
+            <span class="timeline-period">2025 — 2026</span>
+            <div><h3>Algorithm Engineer</h3><p class="timeline-company">AI² Robotics · Shenzhen</p></div>
+            <p class="timeline-description">Vision-language-action models, reinforcement learning, humanoid deployment, and open-source research.</p>
+          </li>
+          <li>
+            <span class="timeline-period">2024 — 2025</span>
+            <div><h3>Algorithm Intern</h3><p class="timeline-company">Shanghai AI Laboratory · Shanghai</p></div>
+            <p class="timeline-description">Continual learning, robotic VLA deployment, and unsupervised skill discovery.</p>
+          </li>
+          <li>
+            <span class="timeline-period">2022 — 2023</span>
+            <div><h3>Algorithm Intern</h3><p class="timeline-company">OPPO · Shenzhen</p></div>
+            <p class="timeline-description">Multimodal interactive recommendation with reinforcement learning.</p>
+          </li>
+          <li>
+            <span class="timeline-period">2022 — 2023</span>
+            <div><h3>Remote Research Intern</h3><p class="timeline-company">Microsoft Research Asia · Remote</p></div>
+            <p class="timeline-description">Machine learning, decentralized finance security, and blockchain applications.</p>
+          </li>
+          <li>
+            <span class="timeline-period">2021</span>
+            <div><h3>Algorithm Intern</h3><p class="timeline-company">Xiaomi · Beijing</p></div>
+            <p class="timeline-description">Deep click-through-rate prediction and advertising algorithms.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="awards">
+        <div class="section-heading">
+          <h2>Awards</h2>
+          <p>Selected recognition.</p>
+        </div>
+        <ul class="compact-list awards-list">
+          <li>
+            <strong>CAST Young Science and Technology Talent Development Program</strong>
+            <span>Doctoral Student Track · 2025</span>
+          </li>
+          <li>
+            <strong>Comprehensive Excellence Scholarship</strong>
+            <span>Tsinghua University · 2020</span>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer>
       <div class="page footer-inner">
-        <p>© 2026 He Zhang · Last updated August 2026</p>
-        <p><a href="mailto:zhanghe18@tsinghua.org.cn">Discuss a research question</a></p>
+        <p>© 2026 He Zhang</p>
+        <p>Guangzhou / Shenzhen, China</p>
       </div>
     </footer>
   </body>

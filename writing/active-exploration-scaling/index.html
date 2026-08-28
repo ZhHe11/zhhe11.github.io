@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8fafc">
+    <meta name="author" content="He Zhang">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="A tentative argument for active exploration as an interaction-centered scaling path for physical intelligence beyond static-data scaling.">
+    <link rel="canonical" href="https://zhhe11.github.io/writing/active-exploration-scaling/">
+    <meta property="og:title" content="Can Active Exploration Create a New Scaling Path for Physical Intelligence?">
+    <meta property="og:description" content="A tentative argument for an interaction-centered route beyond static-data scaling.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zhhe11.github.io/writing/active-exploration-scaling/">
+    <meta property="og:image" content="https://zhhe11.github.io/og-blog.png">
+    <title>Can Active Exploration Create a New Scaling Path for Physical Intelligence? — He Zhang</title>
+    <link rel="stylesheet" href="/blog.css">
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Article","headline":"Can Active Exploration Create a New Scaling Path for Physical Intelligence?","description":"A tentative argument for an interaction-centered route beyond static-data scaling.","datePublished":"2026-08-28","dateModified":"2026-08-28","author":{"@type":"Person","@id":"https://zhhe11.github.io/#person","name":"He Zhang"},"mainEntityOfPage":"https://zhhe11.github.io/writing/active-exploration-scaling/"}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page header-inner">
+        <a class="site-name" href="/">He Zhang / 张贺<small>HKUST(GZ) · Tsinghua University</small></a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="/">Home</a><a href="/writing/" aria-current="page">Writing</a><a href="/#research">Research</a><a href="/#about">About</a><a href="/He-Zhang-CV.pdf">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="article-shell">
+      <header class="article-header">
+        <p class="article-label">Research Idea · Physical Intelligence</p>
+        <h1>Can Active Exploration Create a New Scaling Path for Physical Intelligence?</h1>
+        <p class="article-deck">A tentative argument for an interaction-centered route beyond static-data scaling.</p>
+        <div class="article-byline"><span>He Zhang / 张贺</span><span>August 28, 2026</span><span>Research hypothesis</span></div>
+      </header>
+
+      <article class="article-body">
+        <p class="lead">Large models have demonstrated the power of learning at scale. But it remains unclear whether the same scaling recipe can be transferred to the physical world without substantial changes.</p>
+        <p>When data follows a relatively unified structure and is available in sufficient quantity, predictive learning can produce remarkably general representations, generation, and reasoning. Any new approach to artificial intelligence has to begin by taking this achievement seriously.</p>
+        <p>An embodied agent, however, must operate in a world whose relevant experience cannot be exhaustively recorded in advance. It encounters continuous dynamics, contact, friction, mass, spatial relations, partial observability, action costs, and feedback from an environment that changes because the agent acts.</p>
+        <p class="open-question"><strong>Research hypothesis.</strong> For physical intelligence, the next scaling mechanism may depend not only on larger models and more static data, but also on agents that actively identify and acquire the experience they need. Reinforcement learning, world models, physical AI, and large-model reasoning are possible tools for investigating this hypothesis—not assumptions about the final solution.</p>
+
+        <h2>1. Why static-data scaling may be insufficient</h2>
+        <p>The physical world contains combinatorial complexity across objects, geometry, materials, dynamics, contacts, tasks, and environmental conditions. Increasing the volume and quality of robot data is valuable and necessary, but high-quality interaction data is expensive to collect, and no fixed dataset can enumerate every situation an agent may encounter.</p>
+        <p>This creates a different scaling condition from language. In language modeling, much of the training material already exists as human-produced text. In physical intelligence, the most informative data may not exist until an agent performs a particular action in a particular state. The learning system is therefore not only a consumer of data; it can also become a mechanism for deciding which data should be produced next.</p>
+        <p>The important question is not whether physical intelligence needs large-scale data—it clearly does—but whether <strong>data accumulation alone</strong> can remain the dominant source of improvement. If the world cannot be covered by a static dataset, scaling may also require a procedure for discovering gaps, generating targeted experience, and updating the model repeatedly.</p>
+
+        <h2>2. Learning stable structure instead of enumerating every case</h2>
+        <p>One possible route is to learn and exploit relatively stable rules of the world. Here, “rules” do not mean a manually written list of symbolic statements. They refer to the mechanisms that determine how an environment evolves and how actions produce consequences: which states are reachable, which transitions are impossible, how contact changes motion, and which relationships remain valid across changes in context.</p>
+        <p>Even an environment function such as <code>env.step</code> can be viewed as a collection of rules that the agent does not yet understand. The agent does not necessarily need to recover explicit physical equations. It does, however, need representations that preserve the constraints and regularities required for prediction, planning, and control.</p>
+        <p>If a model can learn this stable structure while continuing to scale, it may not need to fit every possible combination of physical circumstances independently. The aim would be a model that combines the generalization benefits of large-scale learning with the constraints of the physical world.</p>
+
+        <h2>3. A practical decomposition: Z, D, and T</h2>
+        <p>“Learning a world model” is often too broad to guide concrete research. A useful starting point is to separate it into three questions:</p>
+        <ul class="architecture-list">
+          <li><strong>State (Z)</strong><p>What representation preserves the information required for reasoning and control?</p></li>
+          <li><strong>Distance (D)</strong><p>How should the model describe similarity, difference, reachability, and progress between states?</p></li>
+          <li><strong>Transition (T)</strong><p>How should it represent the change produced by an action?</p></li>
+        </ul>
+        <p>This can be summarized provisionally as <strong>“Z–D–T is all you need.”</strong> The phrase is deliberately compact; it is not a claim that the problem is solved by three modules. Its purpose is to turn a vague objective into components that can be studied, evaluated, and recombined.</p>
+        <p>The decomposition also exposes different failure modes. A model may have a visually rich representation but a poor notion of reachability. It may predict short-term transitions but fail to preserve task-relevant state. Or it may encode state and dynamics adequately while using a distance that provides no useful guidance for exploration or control.</p>
+
+        <h2>4. Active exploration as a data-generation mechanism</h2>
+        <p>“Active” here means more than selecting samples from a fixed pool for annotation. The stronger requirement is that an agent can determine what information is missing and interact with the environment to obtain it.</p>
+        <p>Suppose a world model violates a physical constraint, produces an unreliable prediction, or becomes uncertain in a particular region of state space. A passive learning system waits for someone to construct a better dataset. An active system searches for the weakness, designs interactions that isolate it, collects targeted experience, and updates the model.</p>
+        <p>A concrete loop might look like this:</p>
+        <ol class="article-steps">
+          <li>Define evaluations that test physical consistency, reachability, and action consequences—not only average prediction error.</li>
+          <li>Use one or more agents to search for states in which the model violates these constraints or fails to predict reliably.</li>
+          <li>Design and execute interactions around the discovered failure regions.</li>
+          <li>Add the resulting experience to training and update the model.</li>
+          <li>Repeat the process as the model’s boundary moves.</li>
+        </ol>
+        <p>In this loop, data is no longer a resource prepared once before learning begins. It becomes an output of the learning system’s diagnosis of its own limitations.</p>
+        <p>This perspective may also connect active exploration with continual learning and self-improvement. An agent that can repeatedly locate its epistemic boundary and acquire the experience needed to move that boundary has a plausible mechanism for continued growth. The central difficulty is to make exploration informative without making it unsafe, physically expensive, or dominated by already familiar behavior.</p>
+
+        <h2>5. From language reasoning to physical reasoning</h2>
+        <p>Large language models can decompose problems, formulate hypotheses, organize intermediate reasoning, and revise conclusions. Extending these abilities to the physical world is harder than attaching a language model to a controller. Physical reasoning has to be executable, testable, and correctable by the environment.</p>
+        <blockquote class="research-loop"><strong>Large-model reasoning</strong><span>→</span><strong>World-model prediction</strong><span>→</span><strong>Agent experiment</strong><span>→</span><strong>Physical feedback</strong><span>→</span><strong>Revised reasoning</strong></blockquote>
+        <p>In this loop, a large model proposes a physical hypothesis, an experimental procedure, and an expected result. A world model predicts possible outcomes and helps evaluate candidate actions. The agent performs the experiment in an environment. The observed result then supports, rejects, or modifies the original hypothesis.</p>
+        <p>The key question is whether reasoning structures formed in language and symbolic spaces can be translated into physical hypotheses that are both executable and falsifiable. If such a connection can be established, large-model reasoning would not merely describe the physical world. It would participate in a process through which the system actively tests and improves its understanding of that world.</p>
+
+        <h2>6. A tentative scaling loop</h2>
+        <p>The resulting picture is not a rejection of foundation models or data scaling. It is an attempt to extend them with an interaction-centered loop:</p>
+        <ol class="article-steps">
+          <li>A large model provides broad representations and reasoning priors.</li>
+          <li>A world model captures state, reachability, and action-conditioned change.</li>
+          <li>Evaluation exposes violations of physical structure and regions of uncertainty.</li>
+          <li>Active agents generate targeted interactions in those regions.</li>
+          <li>Environmental feedback updates both the world model and subsequent reasoning.</li>
+        </ol>
+        <p>Scaling under this view has several dimensions: model capacity, prior data, learned structure, exploration efficiency, and the number and diversity of informative interactions. The agent improves not only by receiving more examples, but also by becoming better at deciding which experiences are worth acquiring.</p>
+
+        <h2>7. What would make this hypothesis meaningful?</h2>
+        <p>The proposal only becomes useful if it leads to tests that distinguish it from ordinary data collection. Relevant questions include:</p>
+        <ul class="article-questions">
+          <li>Can active collection improve physical consistency more efficiently than adding randomly sampled data?</li>
+          <li>Can a Z–D–T decomposition identify failures hidden by average prediction metrics?</li>
+          <li>Do actively discovered experiences transfer across tasks, objects, or environments?</li>
+          <li>Can multiple agents expose complementary weaknesses rather than repeatedly finding the same failures?</li>
+          <li>Can language-model hypotheses produce experiments whose feedback improves later physical reasoning?</li>
+          <li>Does the resulting loop continue to improve after the original task distribution changes?</li>
+        </ul>
+        <p>Negative results would also be informative. If targeted interaction offers little advantage over sufficiently diverse offline data, or if learned physical structure fails to transfer beyond narrow environments, then the proposed scaling path would need to be revised.</p>
+
+        <h2>Closing thought</h2>
+        <p>Large models have shown how much intelligence can emerge from learning over enormous datasets. The complex physical world, however, cannot be exhaustively captured by static data. A next stage of intelligence may therefore require agents that enter the world, recognize what they do not know, acquire the experience they need, learn relatively stable structure, and use feedback from action to revise themselves.</p>
+        <p>Active exploration may provide one route toward that goal. World models, reinforcement learning, and physical AI offer ways to test it. The more important commitment is methodological: the hypothesis should be evaluated through theory, algorithms, and systems that reveal whether machines can develop a scalable mechanism for active learning and self-improvement.</p>
+
+        <p class="article-discuss">This is a working research hypothesis. <a href="mailto:zhanghe18@tsinghua.org.cn?subject=Discussion%3A%20Active%20Exploration%20and%20Physical%20Intelligence">Discuss the idea</a> or return to the <a href="/writing/">writing archive</a>.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer"><div class="page footer-inner"><p>© 2026 He Zhang</p><p><a href="/writing/">← All writing</a></p></div></footer>
+  </body>
+</html>

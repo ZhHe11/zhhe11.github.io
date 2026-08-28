@@ -587,6 +587,27 @@ summary:focus-visible {
 
 .article-body p { margin: 0 0 1.25rem; }
 
+.article-body code {
+  padding: 0.12em 0.32em;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--surface);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.84em;
+}
+
+.article-steps,
+.article-questions {
+  margin: 1.3rem 0 1.75rem;
+  padding-left: 1.35rem;
+}
+
+.article-steps li,
+.article-questions li { padding-left: 0.35rem; }
+
+.article-steps li + li,
+.article-questions li + li { margin-top: 0.65rem; }
+
 .article-body .lead {
   color: var(--ink);
   font-size: 1.25rem;
@@ -601,6 +622,19 @@ summary:focus-visible {
   background: var(--blue-soft);
   color: #354354;
 }
+
+.research-loop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.7rem;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.research-loop strong { font-weight: 700; }
+.research-loop span { color: var(--blue); }
 
 .architecture-list {
   margin: 2rem 0;

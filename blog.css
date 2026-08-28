@@ -524,7 +524,7 @@ summary:focus-visible {
 
 .archive-entry {
   display: grid;
-  grid-template-columns: 130px minmax(0, 1fr) 70px;
+  grid-template-columns: 150px minmax(0, 1fr);
   gap: 1.5rem;
   padding: 1.25rem 0;
   border-top: 1px solid var(--line);
@@ -704,7 +704,6 @@ summary:focus-visible {
   .section-head { align-items: flex-start; flex-direction: column; gap: 0.45rem; }
   .research-item { grid-template-columns: 66px 1fr; gap: 0.8rem; }
   .archive-entry { grid-template-columns: 90px minmax(0, 1fr); gap: 1rem; }
-  .archive-entry .count { display: none; }
   .record-list li { grid-template-columns: 78px 1fr; }
   .footer-inner { flex-direction: column; }
   .article-shell { width: min(100% - 32px, 760px); }
